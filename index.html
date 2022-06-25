@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Intro Component with Sign Up Form</title>
+
+</head>
+<body>
+  <!-- Main container for the web-application  -->
+  <section class="main">
+    <!-- Heading container -->
+    <div class="heading">
+      <p class="heading-text-1">
+        Learn to code by watching others
+      </p>
+      <p class="heading-text-2">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+    </div>
+    <!-- Container used for flexbox in desktop viewing-mode -->
+    <div class="desktop-flex-container">
+      <!-- Container for  -->
+      <div class="purple-container">
+        <span id="span-text-1">Try it free 7 days</span> 
+        then $20/mo. thereafter
+      </div>
+      <!-- Container for the card -->
+      <form class="card" id="my-form" onsubmit="checkInputs()" action="javascript:void(0);">
+        <!-- Container for input field -->
+        <div class="input-container">
+          <input type="text" name="first-name" id="first-name-input" placeholder="First Name">
+          <img src="/images/icon-error.svg" alt="error-image" class="error-image">
+        </div>
+        <p  class="error-text" id="error-1"></p>
+        <div class="input-container">
+          <input type="text" name="first-name" id="last-name-input" placeholder="Last Name ">
+          <img src="/images/icon-error.svg" alt="error-image" class="error-image">
+        </div>
+        <p class="error-text" id="error-2"></p>
+        <div class="input-container">
+          <input type="text" name="first-name" id="email-address-input" placeholder="Email Address">
+          <img src="/images/icon-error.svg" alt="error-image" class="error-image">
+        </div>
+        <p class="error-text" id="error-3"></p>
+        <div class="input-container">
+          <input type="password" name="first-name" id="password-input" placeholder="Password">
+          <img src="/images/icon-error.svg" alt="error-image" class="error-image">
+        </div>
+        <p class="error-text" id="error-4"></p>
+        <button class="submit-button" id="submit" type="submit" form="my-form">
+          CLAIM YOUR FREE TRAIL
+        </button>
+        
+        <p id="ending-text">
+          By clicking the button, you are agreeing to our 
+          <span id="span-text-2">Terms and Services</span>
+        </p>
+      </form>
+    </div>
+  </section>
+  <script src="/utilities/main.js"></script>
+</body>
+</html>

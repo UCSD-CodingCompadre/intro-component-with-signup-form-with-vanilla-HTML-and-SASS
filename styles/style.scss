@@ -1,0 +1,183 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    height: auto;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .heading
+    {
+        .heading-text-1
+        {
+            margin-top: 50px;
+            padding: 0px 20px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.875rem;
+        }
+        .heading-text-2
+        {
+            margin-top: 10px;
+            padding: 0px 10px;
+            color: white;
+            font-weight: 400;
+            font-size: 0.875rem;
+        }
+    }
+    .desktop-flex-container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .purple-container
+        {
+            width: 350px;
+            border-radius: 5px;
+            background-color: hsl(248, 32%, 49%);
+            padding: 20px 60px;
+            color: white;
+            font-size: 1rem;
+            margin-top: 50px;
+            #span-text-1
+            {
+                font-weight: 600;
+            }
+        }
+        .card
+        {
+            margin-top: 20px;
+            width: 350px;
+            background-color: white;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+            .input-container
+            {
+                border: 1px solid hsl(246, 25%, 77%);
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                input
+                {
+                    border: none;
+                    font-size: 1rem;
+                    height: 34px;
+                }
+            }
+            .error-text
+            {
+                text-align: right;
+                font-size: .875rem;
+                color: hsl(0, 100%, 74%) ;
+                padding-top: 2.5px;
+                padding-bottom: 2.5px;
+            }
+            .submit-button
+            {
+                margin-top: 2.5px;
+                padding: 20px 40px;
+                background-color: hsl(154, 59%, 51%);
+                border: none;
+                border-radius: 5px;
+                color: white;
+                width: 100%;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            #ending-text
+            {
+                margin-top: 10px;
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 12px;
+                color: hsl(246, 25%, 77%);
+                #span-text-2
+                {
+                    color: hsl(0, 100%, 74%);
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.error-image
+{
+    display: none;
+}
+
+input:focus
+{
+    border: none;
+    outline: none;
+}
+
+input::placeholder
+{
+    color: hsl(246, 25%, 77%);
+}
+
+@media screen and (min-width: 1024px) 
+{
+    .main
+    {
+        flex-direction: row;
+        height: 100vh;
+        width: 100vw;
+        justify-content: space-around;
+        background-image: url(/images/bg-intro-desktop.png);
+        .heading
+        {
+            width: 30%;
+            text-align: left;
+            .heading-text-1
+            {
+                padding: 0px;
+                margin: 0px;
+            }
+            .heading-text-2
+            {
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+        .desktop-flex-container
+        {
+            .purple-container
+            {
+                padding: 10px 20px;
+                margin: 0px;
+                font-size: .875rem;
+                border-radius: 5px;
+                width: 600px;
+            }
+            .card
+            {
+                width: 600px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

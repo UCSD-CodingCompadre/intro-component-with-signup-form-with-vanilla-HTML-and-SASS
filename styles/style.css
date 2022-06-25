@@ -1,0 +1,206 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(/images/bg-intro-mobile.png);
+  background-color: #ff7a7a;
+  height: auto;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.main .heading .heading-text-1 {
+  margin-top: 50px;
+  padding: 0px 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+
+.main .heading .heading-text-2 {
+  margin-top: 10px;
+  padding: 0px 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.main .desktop-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .desktop-flex-container .purple-container {
+  width: 350px;
+  border-radius: 5px;
+  background-color: #6055a5;
+  padding: 20px 60px;
+  color: white;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+.main .desktop-flex-container .purple-container #span-text-1 {
+  font-weight: 600;
+}
+
+.main .desktop-flex-container .card {
+  margin-top: 20px;
+  width: 350px;
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.main .desktop-flex-container .card .input-container {
+  border: 1px solid #b9b6d3;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.main .desktop-flex-container .card .input-container input {
+  border: none;
+  font-size: 1rem;
+  height: 34px;
+}
+
+.main .desktop-flex-container .card .error-text {
+  text-align: right;
+  font-size: .875rem;
+  color: #ff7a7a;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+}
+
+.main .desktop-flex-container .card .submit-button {
+  margin-top: 2.5px;
+  padding: 20px 40px;
+  background-color: #38cc8c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.main .desktop-flex-container .card #ending-text {
+  margin-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 12px;
+  color: #b9b6d3;
+}
+
+.main .desktop-flex-container .card #ending-text #span-text-2 {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+.error-image {
+  display: none;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #b9b6d3;
+}
+
+input:-ms-input-placeholder {
+  color: #b9b6d3;
+}
+
+input::-ms-input-placeholder {
+  color: #b9b6d3;
+}
+
+input::placeholder {
+  color: #b9b6d3;
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-image: url(/images/bg-intro-desktop.png);
+  }
+  .main .heading {
+    width: 30%;
+    text-align: left;
+  }
+  .main .heading .heading-text-1 {
+    padding: 0px;
+    margin: 0px;
+  }
+  .main .heading .heading-text-2 {
+    padding: 0px;
+    margin: 0px;
+  }
+  .main .desktop-flex-container .purple-container {
+    padding: 10px 20px;
+    margin: 0px;
+    font-size: .875rem;
+    border-radius: 5px;
+    width: 600px;
+  }
+  .main .desktop-flex-container .card {
+    width: 600px;
+    margin-bottom: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
