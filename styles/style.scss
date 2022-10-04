@@ -15,6 +15,7 @@ body
     display: flex;
     flex-direction: column;
     background-image: url(/images/bg-intro-mobile.png);
+    background-repeat: repeat;
     background-color: hsl(0, 100%, 74%);
     height: auto;
     width: 100vw;
